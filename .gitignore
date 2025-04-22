@@ -1,0 +1,23 @@
+# Ignorar archivos generados por dependencias y compilación
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+
+# Archivos generados por la instalación de dependencias
+*.log
+*.sqlite3
+
+# Archivos de configuración local de Flask
+*.db
+*.sqlite
+
+# Archivos temporales de OS
+.DS_Store
+Thumbs.db
