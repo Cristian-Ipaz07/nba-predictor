@@ -28,8 +28,10 @@ El modelo predice el ganador basándose en la diferencia de puntos entre los equ
   ```bash
   pip install -r requirements.txt
 
+## 📊 Obtención de datos
 
-tos:** Los datos de los partidos de la NBA fueron extraídos utilizando **web scraping** desde [Ba>
+Los datos de los partidos de la NBA fueron extraídos utilizando **web scraping** desde la página [Basketball Reference](https://www.basketball-reference.com/). Para esto se utilizó el script `scraping.py`, el cual emplea las librerías `requests`, `BeautifulSoup` y `pandas` para extraer y guardar la tabla de resultados en un archivo CSV llamado `nba_games_2023.csv`.
+
 
 ## 🚀 Instrucciones para ejecutar el proyecto
 
