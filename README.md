@@ -32,6 +32,28 @@ El modelo predice el ganador basándose en la diferencia de puntos entre los equ
 
 Los datos de los partidos de la NBA fueron extraídos utilizando **web scraping** desde la página [Basketball Reference](https://www.basketball-reference.com/). Para esto se utilizó el script `scraping.py`, el cual emplea las librerías `requests`, `BeautifulSoup` y `pandas` para extraer y guardar la tabla de resultados en un archivo CSV llamado `nba_games_2023.csv`.
 
+## 📋Actualizacion 23/4
+✅ Paso 1: Scraper multi-meses para una temporada (ejemplo: 2015)
+Se desarrolló un script llamado scraping2.py que permite automatizar la recolección de datos de partidos de toda una temporada de la NBA. Este script:
+
+Accede al índice de la temporada en la web de Basketball Reference.
+
+Extrae dinámicamente los enlaces a los diferentes meses (octubre, noviembre, diciembre, etc.) disponibles para esa temporada.
+
+Descarga cada mes por separado y los combina en un único DataFrame utilizando pandas.
+
+El DataFrame consolidado se guarda como un archivo .csv con el nombre nba_<temporada>.csv dentro de la carpeta data/raw.
+
+Esto permite tener un solo archivo por temporada con todos los partidos.
+
+⏳ Paso 2: Scraper para múltiples temporadas (2015–2024)
+El script scraping2.py también permite ejecutar scraping de múltiples temporadas mediante un simple bucle sobre los años deseados. Para esto:
+
+Se define un rango de años (por ejemplo, range(2015, 2025)).
+
+El script ejecuta el scraping de cada temporada, uno por uno.
+
+Cada archivo se guarda con el nombre correspondiente, permitiendo organizar y versionar los datos históricos de forma clara y ordenada en la carpeta data/raw.
 
 ## 🚀 Instrucciones para ejecutar el proyecto
 
