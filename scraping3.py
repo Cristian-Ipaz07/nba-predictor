@@ -49,6 +49,6 @@ def scrape_season_dynamic(season):
         print(f"⚠️ No se extrajo ningún dato para la temporada {season}")
 
 if __name__ == "__main__":
-    for season in range(2018, 2020):
+    for season in range(2024, 2026):
         print("===========================")
         scrape_season_dynamic(season)
